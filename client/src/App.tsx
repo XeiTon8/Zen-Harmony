@@ -33,19 +33,19 @@ import { Projects } from './pages/projects';
 import { useSelector } from 'react-redux';
 import { useAppDispatch } from './redux/hooks';
 import { selectIsLoggedIn, selectIsUserCardOpened, selectSelectedUserID, selectSubscribedTasks, selectUser, selectUserByID, selectUserID } from './redux/users/selectors'
+import { selectIsNewNotification, selectTaskIDAddToStack, selectTaskIDFromStack, selectNotificationTaskIDStack, selectCommentCreatedBy } from './redux/notifications/selectors';
 import { selectIsNewComment, selectSelectedTaskID, selectTaskByID } from './redux/tasks/selectors';
 
 // Redux reducers
-import { getUser, setIsLoggedIn } from './redux/users/slice';
+import { getUser, getUsers, setIsLoggedIn } from './redux/users/slice';
 import { fetchArchivedTasks, fetchAllTaks, setIsNewComment } from './redux/tasks/slice';
 import { fetchProjects } from './redux/projects/slice';
 import { fetchDepartments } from './redux/users/departments/slice';
 import { fetchPositions } from './redux/users/positions/slice';
-import { getUsers } from './redux/users/slice';
 import { fetchLabels } from './redux/tasks/slice';
 import { fetchCustomers } from './redux/customers/slice';
-import { selectIsNewNotification, selectTaskIDAddToStack, selectTaskIDFromStack, selectNotificationTaskIDStack, selectCommentCreatedBy } from './redux/notifications/selectors';
 import { addNewTaskIDToStack, addNotification, clearSubscribedTasksStack, fetchNotifications, setIsNewNotification, setNotificationLastTaskID } from './redux/notifications/slice';
+
 import { INotification } from './redux/notifications/types';
 
 
@@ -82,11 +82,11 @@ function App() {
 
   const fetchData =  async () => {
     await dispatch(fetchCustomers());
-    await dispatch(fetchNotifications());
     await dispatch(fetchProjects());
+    await dispatch(fetchAllTaks());
+    await dispatch(fetchNotifications());
     await dispatch(fetchArchivedTasks());
     await dispatch(getUsers());
-    await dispatch(fetchAllTaks());
     await dispatch(fetchDepartments());
     await dispatch(fetchPositions());
     await dispatch(fetchLabels());
