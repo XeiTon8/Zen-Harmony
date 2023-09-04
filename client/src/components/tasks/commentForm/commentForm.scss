@@ -1,0 +1,42 @@
+.comments__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comments__comment-item {
+    padding: 15px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .08);
+}
+
+.comment-item__created-by {
+    border-bottom: 1px solid #747474;
+    padding: 5px;
+}
+
+.comments__comment-text {
+    padding: 10px;
+    min-height: 50px;
+
+}
+
+.comments__comments-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comments__editor-wrapper {
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .08);
+    padding: 15px;
+}
+
+.comments__editor {
+    padding: 10px;
+    background-color: rgba(243, 179, 94, 0.5);
+}
+
+.comments__editor-content-wrapper {
+    margin-bottom: 2%;
+}
+

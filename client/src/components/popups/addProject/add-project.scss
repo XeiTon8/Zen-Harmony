@@ -1,0 +1,33 @@
+
+.add-project__project-name {
+    border-radius: 5px;
+    border: 2px solid lightblue;
+}
+
+.add-project-form--hidden {
+    transform: translateY(-100%);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    max-width: 320px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.add-project-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    left: 45%;
+    background-color: #fff;
+    box-shadow: 0 0 4px 4px rgba(0,0,0,.08);
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,98 @@
+.calendar-event-card--hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    left: 45%;
+    top: 0;
+    z-index: 10;
+    margin: 0 auto;
+    display: flex;
+    width: 500px;
+    min-height: 300px;
+}
+
+.calendar-event-card--active {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    left: 45%;
+    top: 15%;
+    z-index: 10;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    min-height: 300px;
+}
+
+.calendar-event-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .08);
+    background: #fff;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    z-index: 300;
+    min-height: 300px;
+
+
+    & select {
+        padding: 20px;
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, .08);
+        border-radius: 10px;
+        width: 90%;
+    }
+    
+}
+
+.calendar-card__left-content, .calendar-card__right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 0 auto;
+}
+
+div.calendar-card__left-content {
+    flex: 0.2 1 auto;
+}
+
+.calendar-card__date-range {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 auto;
+
+    & .calendar-card__start-date, .calendar-card__end-date {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    & .calendar-card__end-date {
+        flex: 0.5 1 auto;
+        & input {
+            width: 90%;
+        }
+
+        & div.end-date-editable {
+            width: 100%;
+            flex: 0.9 1;
+        }
+    }
+}
+
+.calendar-card__event-btn {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.date-range-editable {
+    gap: 10px;
+}

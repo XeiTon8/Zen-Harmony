@@ -1,0 +1,27 @@
+.team__users-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .08);
+}
+
+.team__menu-and-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+
+    & button {
+        margin-left: auto;
+    }
+}
+
+.users-table__user-row {
+
+    & .users-table__user-cell {
+        min-height: 100px;
+        border-right: 1px solid  gray;
+        text-align: center;
+        overflow: hidden;
+        padding: 10px;
+    }
+}

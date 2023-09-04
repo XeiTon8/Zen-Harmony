@@ -1,0 +1,59 @@
+.add-calendar-event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .08);
+    max-width: 320px;
+    border-radius: 10px;
+
+    & input {
+        width: 100%;
+    }
+    & select {
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, .08);
+        padding: 15px;
+    }
+}
+
+.add-event--hidden {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+    position: fixed;
+    left: 45%;
+    top: 0;
+    z-index: 10;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .08);
+    max-width: 320px;
+    width: 320px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.add-event--active {
+    width: 320px;
+    background: #fff;
+    transform: translateY(0px);
+    transition: transform 0.3s ease-in-out;
+    z-index: 300;
+    position: absolute;
+    left: 45%;
+    top: 5%;
+}
+
+.add-calendar-event__select-deadline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & .add-calendar-event__start-date, .add-calendar-event__end-date {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

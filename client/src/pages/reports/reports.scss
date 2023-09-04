@@ -1,0 +1,23 @@
+
+.reports__filters {
+    padding: 20px;
+    
+    & select {
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, .08);
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+
+.reports__table-wrapper {
+    margin-bottom: 2%;
+}
+
+.reports__container {
+    padding-bottom: 10px;
+}
+
+.reports__total-costs {
+    display: block;
+    margin-bottom: 1%;
+}

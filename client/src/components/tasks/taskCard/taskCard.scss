@@ -1,0 +1,28 @@
+.task-item {
+    border: 1px solid #747474;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .08);
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    align-content: center;
+    align-items: center;
+}
+
+.open-task-btn {
+   margin-left: auto;
+}
+
+.assigned-user {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.task-item__main-info, .task-item__users-n-labels {
+    display: flex;
+    gap: 10px;
+}
+
+.task-item__users-n-labels {
+    margin: 0 auto;
+}

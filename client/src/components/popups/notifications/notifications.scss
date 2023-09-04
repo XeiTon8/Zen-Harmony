@@ -1,0 +1,45 @@
+.notifications-wrapper {
+    position: absolute;
+    left: 81%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 15px;
+    width: 500px;
+    height: 99vh;
+    background: #fff;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 4px 4px rgba(0,0,0,.08);
+}
+
+.notifications-wrapper--hidden {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    left: 100%;
+    top: 98%;
+    width: 500px;
+    text-align: center;
+    height: 99vh;
+}
+
+.notifications-wrapper--active {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    left: 55%;
+    top: 98%;
+    width: 500px;
+    text-align: center;
+    height: 99vh;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 0 1 auto;
+}

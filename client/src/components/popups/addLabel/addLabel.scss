@@ -1,0 +1,12 @@
+.labels__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .08);
+    gap: 10px;
+    max-width: 200px;
+
+    & input {
+        border: 1px solid black;
+    }
+}

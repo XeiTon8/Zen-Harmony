@@ -1,0 +1,20 @@
+div.timer-popup-hidden {
+    display: none;
+}
+
+.timer-popup-active {
+    position: absolute;
+    left: 65%;
+    top: 100%;
+}
+
+.timer-popup {
+    background: #fff;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .08);
+    width: 270px;
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
